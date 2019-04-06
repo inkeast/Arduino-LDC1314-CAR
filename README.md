@@ -1,17 +1,17 @@
 # Arduino-LDC1314-CAR
-本项目实现了一个使用LDC1314进行电磁循迹的小车
-本项目使用了以下硬件：
-LDC1314 评估板
-L298N驱动板
-Arduino mega 2560
-光栅距离测量模块
-串口蓝牙模块（如果需要）
+本项目实现了一个使用LDC1314进行电磁循迹的小车 \n
+本项目使用了以下硬件：\n
+LDC1314 评估板\n
+L298N驱动板\n
+Arduino mega 2560\n
+光栅距离测量模块\n
+串口蓝牙模块（如果需要）\n
 
-函数说明：
-底层函数：（自动调用）
-void update_speed（）			刷新pwm波的频率
-void set_left_value（）			更改左轮的pwm频率
-void set_right_value（）		更改右轮的pwm频率
+函数说明：\n
+底层函数：（自动调用）\n
+void update_speed（）			刷新pwm波的频率\n
+void set_left_value（）			更改左轮的pwm频率\n
+void set_right_value（）		更改右轮的pwm频率\n
 void step_on（）			光电开关给予一次脉冲后刷新距离
 void the_timer()			定时器中断函数（用来用蓝牙打印行驶距离）
 void step_on_left()			左轮进行一次距离加法
